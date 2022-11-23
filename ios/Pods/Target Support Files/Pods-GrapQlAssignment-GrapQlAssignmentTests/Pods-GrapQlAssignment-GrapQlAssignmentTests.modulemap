@@ -1,0 +1,6 @@
+module Pods_GrapQlAssignment_GrapQlAssignmentTests {
+  umbrella header "Pods-GrapQlAssignment-GrapQlAssignmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
