@@ -40,7 +40,6 @@ const Countries = (props) => {
         )
     }
     const searchFilterFunction = (text) => {
-        console.log("text", data.continent.countries)
         if (text) {
             const newData = (data.continent.countries).filter(
                 function (item) {
@@ -50,7 +49,6 @@ const Countries = (props) => {
                     const textData = text.toLowerCase();
                     return itemData.indexOf(textData) > -1;
                 });
-            console.log("newdaata", newData)
             setFilteredDataSource(newData);
             setSearch(text);
         } else {
