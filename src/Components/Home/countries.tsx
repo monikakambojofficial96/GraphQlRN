@@ -89,7 +89,11 @@ const Countries = (props) => {
                         renderItem={({ item }) => <CountryItem country={item} />}
                         keyExtractor={(item, index) => index.toString()}
                     />
-                    <Pressable style={styles.button} onPress={() => props.setModalVisible(!props.modalVisible)}>
+                    <Pressable style={styles.button} onPress={() => {
+                        props.setModalVisible(!props.modalVisible)
+                        searchFilterFunction('')
+                    }
+                    }>
                         <Text style={styles.textStyle}>CLOSE</Text>
                     </Pressable>
                 </View>
